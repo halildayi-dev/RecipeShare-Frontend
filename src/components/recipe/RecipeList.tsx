@@ -15,6 +15,7 @@ const RecipeList = () => {
         {mockRecipes.map((recipe) => (
           <RecipeCard
             key={recipe.id}
+            id={recipe.id}
             title={recipe.title}
             imageUrl={recipe.imageUrl}
             authorName={recipe.authorName}

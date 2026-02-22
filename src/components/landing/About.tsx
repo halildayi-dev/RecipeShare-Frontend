@@ -1,14 +1,18 @@
+import ValueCard from "./ValueCard";
+
+import { values } from "@/services/mocks/about";
+
 const About = () => {
   return (
     <section
       id="about"
-      className="py-20 px-6 max-w-6xl mx-auto"
+      className="py-20 px-6"
     >
-      <div className="grid gap-12 md:grid-cols-2 items-center">
+      <div className="max-w-6xl mx-auto grid gap-12 md:grid-cols-2 items-center">
         
         {/* Text content */}
         <div>
-          <h3 className="text-3xl font-bold mb-6">
+          <h3 className="text-3xl font-bold mb-6 leading-tight">
             Built for People Who Love Cooking
           </h3>
 
@@ -26,26 +30,15 @@ const About = () => {
 
         {/* Values */}
         <div className="grid gap-6">
-          <div className="bg-gray-50 p-6 rounded-xl">
-            <h4 className="font-semibold mb-2">Community First</h4>
-            <p className="text-sm text-gray-600">
-              Recipes shared by real people, inspired by everyday cooking.
-            </p>
-          </div>
-
-          <div className="bg-gray-50 p-6 rounded-xl">
-            <h4 className="font-semibold mb-2">Simple by Design</h4>
-            <p className="text-sm text-gray-600">
-              Clean interfaces and intuitive tools that stay out of your way.
-            </p>
-          </div>
-
-          <div className="bg-gray-50 p-6 rounded-xl">
-            <h4 className="font-semibold mb-2">Made to Grow</h4>
-            <p className="text-sm text-gray-600">
-              A platform that evolves with its community over time.
-            </p>
-          </div>
+          {
+            values.map((value) => 
+              <ValueCard 
+                key={value.id}
+                title={value.title}
+                description={value.description}
+              />
+            )
+          }
         </div>
 
       </div>

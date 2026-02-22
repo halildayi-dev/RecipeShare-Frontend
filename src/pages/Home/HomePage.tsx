@@ -5,7 +5,7 @@ export default function HomePage() {
   return (
    <>
     <AppHeader />
-    <main>
+    <main className='bg-gray-50 min-h-screen'>
         <RecipeList />
     </main>
    </>

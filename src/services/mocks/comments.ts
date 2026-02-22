@@ -1,6 +1,7 @@
 export const mockComments = [
   {
     id: "c1",
+    recipeId: "1",
     userName: "Alex Johnson",
     userAvatarUrl: "https://i.pravatar.cc/150?img=8",
     createdAt: "1 day ago",
@@ -8,6 +9,7 @@ export const mockComments = [
   },
   {
     id: "c2",
+    recipeId: "1",
     userName: "Emily Chen",
     userAvatarUrl: "https://i.pravatar.cc/150?img=45",
     createdAt: "2 days ago",
@@ -15,6 +17,7 @@ export const mockComments = [
   },
   {
     id: "c3",
+    recipeId: "2",
     userName: "James Miller",
     userAvatarUrl: "https://i.pravatar.cc/150?img=12",
     createdAt: "3 days ago",

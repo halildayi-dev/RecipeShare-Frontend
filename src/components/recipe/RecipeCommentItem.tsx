@@ -1,4 +1,4 @@
-interface Props {
+interface RecipeCommentItemProps {
   userName: string;
   userAvatarUrl: string;
   createdAt: string;
@@ -10,26 +10,27 @@ const RecipeCommentItem = ({
   userAvatarUrl,
   createdAt,
   text,
-}: Props) => {
+}: RecipeCommentItemProps) => {
   return (
-    <div className="flex gap-3">
+    <div className="flex gap-4 p-3 rounded-lg hover:bg-gray-50 transition">
       <img
         src={userAvatarUrl}
         alt={userName}
-        className="w-9 h-9 rounded-full object-cover"
+        className="w-9 h-9 rounded-full object-cover shrink-0"
       />
 
       <div className="flex-1">
-        <div className="flex items-center gap-2 text-sm">
-          <span className="font-medium">{userName}</span>
-          <span className="text-gray-400">{createdAt}</span>
+        <div className="flex items-center gap-3 text-sm">
+          <span className="font-medium text-gray-900">{userName}</span>
+          <span className="text-gray-400 text-xs">{createdAt}</span>
         </div>
 
-        <p className="text-gray-700 mt-1">{text}</p>
+        <p className="text-gray-700 mt-2 leading-relaxed text-sm">{text}</p>
 
-        <div className="flex gap-4 mt-2 text-sm text-gray-500">
-          <button className="hover:text-gray-700">👍 Like</button>
-          <button className="hover:text-gray-700">👎 Dislike</button>
+        <div className="flex gap-6 mt-3 text-sm text-gray-500">
+          <button className="hover:text-gray-700 transition">👍 Like</button>
+          <button className="hover:text-gray-700 transition">👎 Dislike</button>
+          <button className="hover:text-gray-700 transition">Reply</button>
         </div>
       </div>
     </div>

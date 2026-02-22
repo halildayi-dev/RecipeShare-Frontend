@@ -1,6 +1,7 @@
 export const mockRecipes = [
   {
     id: "1",
+    authorId: "u1",
     title: "Classic Italian Spaghetti Carbonara",
     imageUrl:
       "https://images.unsplash.com/photo-1608756687911-aa1599ab3bd9",
@@ -11,6 +12,7 @@ export const mockRecipes = [
   },
   {
     id: "2",
+    authorId: "u1",
     title: "Homemade Avocado Toast with Poached Egg",
     imageUrl:
       "https://images.unsplash.com/photo-1551183053-bf91a1d81141",
@@ -21,6 +23,7 @@ export const mockRecipes = [
   },
   {
     id: "3",
+    authorId: "",
     title: "Fluffy Blueberry Pancakes",
     imageUrl:
       "https://images.unsplash.com/photo-1587738347115-97aaf8b92f06",
@@ -31,6 +34,7 @@ export const mockRecipes = [
   },
   {
     id: "4",
+    authorId: "",
     title: "Fresh Summer Salad with Lemon Dressing",
     imageUrl:
       "https://images.unsplash.com/photo-1556911073-52527ac437f5",
@@ -41,6 +45,7 @@ export const mockRecipes = [
   },
   {
     id: "5",
+    authorId: "",
     title: "Creamy Mushroom Risotto",
     imageUrl:
       "https://images.unsplash.com/photo-1604908177522-0506c1c8b8f4",

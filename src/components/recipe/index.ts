@@ -7,3 +7,5 @@ export { default as RecipeActions } from "./RecipeActions";
 export { default as RecipeContent } from "./RecipeContent";
 export { default as RecipeComments } from "./RecipeComments";
 export { default as RecipeCommentItem } from "./RecipeCommentItem";
+
+export { default as CreateRecipeForm } from "./CreateRecipeForm";

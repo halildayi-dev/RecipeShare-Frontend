@@ -5,6 +5,7 @@ import { RegisterPage } from "@/pages/Register";
 import { HomePage } from "@/pages/Home";
 import { RecipeDetailPage } from "@/pages/RecipeDetails";
 import { ProfilePage } from "@/pages/Profile";
+import { CreateRecipePage } from "@/pages/CreateRecipe";
 
 const AppRouter = () => {
   return (
@@ -16,6 +17,7 @@ const AppRouter = () => {
         <Route path="/home" element={<HomePage />} />
         <Route path="/recipes/:id" element={<RecipeDetailPage />} />
         <Route path="/profile" element={<ProfilePage />} />
+        <Route path="/recipes/create" element={<CreateRecipePage />} />
       </Routes>
     </BrowserRouter>
   );

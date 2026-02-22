@@ -1,4 +1,4 @@
-import  {AuthLayout, LoginForm } from "@/components/auth";
+import { AuthLayout, LoginForm } from "@/components/auth";
 
 const LoginPage = () => {
   return (
